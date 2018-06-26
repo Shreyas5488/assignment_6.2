@@ -1,0 +1,21 @@
+install.packages('titanic')
+library(titanic)
+View(Titanic)
+View(titanic_gender_model)
+View(titanic_gender_class_model)
+View(titanic_test)
+View(titanic_train)
+
+#first question
+boxplot(titanic_train$Fare~titanic_train$Ticket, xlab = "Ticket Class", ylab = " Fare", 
+        col = 'red', horizontal = F)
+
+Fares are highest for PC 17760 ticket class, followed by 230136, 367232
+
+#second question
+
+library(ggplot2)
+boxplot(titanic_train$Fare~titanic_train$Ticket, xlab = "Ticket Class", ylab = " Fare", 
+        col = 'red', horizontal = F)
+
+
